@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title></title>
+		<style type="text/css">
+			div {
+				width: 150px;
+				height: auto;
+				border: 1px solid black;
+				padding: 10px;
+				text-align: justify;
+				text-indent: 20px;
+			}
+
+			p {
+				width: 100px;
+				text-align: center;
+				text-justify: inter-ideograph; //兼容IE
+
+			}
+
+			span {
+				display: inline-block;
+				float: left;
+				width: 100px;
+				height: auto;
+				border: 1px solid black;
+				padding: 10px;
+				text-align: justify;
+				height: 40px;
+				line-height: 40px;
+			}
+
+			/* text-align: justify;对单行文本或者文本最后一行不起作用,使用伪元素变成多行文本 */
+			span:after {
+				content: '\a';
+				width: 100%;
+				display: inline-block;
+				overflow: hidden;
+				height: 0;
+			}
+
+			
+			
+		</style>
+	</head>
+	<body>
+
+
+		<div>如果不是你突然闯进我生活，我怎会把熟悉的寂寞放任了</div>
+		<p>
+			<span>姓名</span>
+		<p>
+		<p>
+			<span>出生年月</span>
+		<p>
+		<p>
+			<span>年龄</span>
+		<p>
+	</body>
+</html>
